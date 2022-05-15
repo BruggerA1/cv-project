@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+.App {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	'personal personal'
+	'contact summary'
+	'education experience'
+	'education experience'
+	'skills experience'
+	;
+}
+
+.Personal {
+	grid-area: personal;
+}
+
+.Contact {
+	grid-area: contact;
+}
+
+.Summary {
+	grid-area: summary;
+}
+
+.Education {
+	grid-area: education;
+}
+.Skills {
+	grid-area: skills;
+}
+.Experience {
+	grid-area: experience;
+}
