@@ -1,8 +1,22 @@
+@font-face {
+	font-family: 'RobotoFlex';
+	src: url(../assets/RobotoFlex.ttf);
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'RobotoFlexBold';
+	src: url(../assets/RobotoFlex.ttf);
+	font-weight: 500;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 
 	box-sizing: border-box;
+
+	font-family: RobotoFlex;
 }
 
 .App {
@@ -16,6 +30,10 @@
 	'education experience'
 	'skills experience'
 	;
+	height: 11in;
+	width: 8.5in;
+	margin: 0 auto;
+	border: solid;
 }
 
 .Personal {

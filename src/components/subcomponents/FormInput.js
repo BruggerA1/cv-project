@@ -18,6 +18,8 @@ export default class FormInput extends Component {
 		return(
 			<input
 				name={input}
+				id={input}
+				className={'FormInput'}
 				placeholder={input}
 				value={value}
 				onChange={handleChange}

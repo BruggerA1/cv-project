@@ -8,7 +8,7 @@ export default class Personal extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			readOnly: true,
+			readOnly: false,
 		};
 		this.toggleEdit = this.toggleEdit.bind(this);
 	};
@@ -23,10 +23,12 @@ export default class Personal extends Component {
 		const { readOnly } = this.state;
 		return(
 			<form className="Personal" onSubmit={toggleEdit}>
-				<FormTitle id={'title-personal'} title={'Personal'}/>
+				{/* <FormTitle id={'title-personal'} title={'Personal'}/> */}
 				<FormSubmit readOnly={readOnly}/>
-				<FormInput input="first" readOnly={readOnly}/>
-				<FormInput input="last" readOnly={readOnly}/>
+				<div className='name'>
+					<FormInput id='firstName' input="first" readOnly={readOnly}/>
+					<FormInput id='lastName' input="last" readOnly={readOnly}/>
+				</div>
 				<FormInput input="title" readOnly={readOnly}/>
 			</form>
 		);
