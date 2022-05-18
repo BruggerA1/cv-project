@@ -1,4 +1,4 @@
-import './styles/App.css'
+import './styles/App.scss'
 import { Component } from 'react';
 import Contact from './components/Contact';
 import Education from './components/Education';
@@ -11,12 +11,18 @@ export default class App extends Component {
   render() {
     return(
       <div className='App'>
-        <Personal/>
-        <Contact/>
-        <Education/>
-        <Summary/>
-        <Skills/>
-        <Work/>
+        <header>
+          <Personal/>
+        </header>
+        <nav>
+          <Contact/>
+          <Education/>
+          <Skills/>
+        </nav>
+        <main>
+          <Summary/>
+          <Work/>
+        </main>
       </div>
     );
   };

@@ -1,14 +1,13 @@
-import '../styles/Personal.css'
+import '../styles/Personal.scss'
 import { Component } from "react";
 import FormInput from "./subcomponents/FormInput";
 import FormSubmit from "./subcomponents/FormSubmit";
-import FormTitle from "./subcomponents/FormTitle";
 
 export default class Personal extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			readOnly: false,
+			readOnly: true,
 		};
 		this.toggleEdit = this.toggleEdit.bind(this);
 	};

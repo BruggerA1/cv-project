@@ -17,7 +17,8 @@ export default class FormInputDate extends Component {
 		const { handleChange } = this;
 		const { input, value, readOnly } = this.props;
 		return(
-			<input
+			<input 
+				className="FormInputDate"
 				name={input}
 				type="month"
 				value={value}

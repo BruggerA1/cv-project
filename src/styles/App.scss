@@ -10,6 +10,14 @@
 	font-weight: 500;
 }
 
+@font-face {
+	font-family: 'RobotoFlexItalic';
+	src: url(../assets/RobotoFlex.ttf);
+	font-weight: 500;
+	font-style: italic;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -21,20 +29,34 @@
 
 .App {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 3in 5.5in;
+	grid-template-rows: 2in 100%;
 	grid-template-areas:
-	'personal personal'
-	'contact summary'
-	'education experience'
-	'education experience'
-	'skills experience'
+	'header header'
+	'nav main'
 	;
-	height: 11in;
+	min-height: 11in;
 	width: 8.5in;
 	margin: 0 auto;
-	border: solid;
 }
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+	border-right: solid 1px;
+	border-left: solid 1px;
+
+}
+
+main {
+	grid-area: main;
+	border-right: solid 1px;
+
+}
+
 
 .Personal {
 	grid-area: personal;

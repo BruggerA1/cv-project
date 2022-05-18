@@ -4,6 +4,7 @@ import FormInput from "./subcomponents/FormInput";
 import ItemAdd from "./subcomponents/ItemAdd";
 import ItemDelete from "./subcomponents/ItemDelete";
 import FormTitle from "./subcomponents/FormTitle";
+import '../styles/Skills.scss';
 
 export default class Skills extends Component {
 	constructor(props) {
@@ -27,8 +28,8 @@ export default class Skills extends Component {
 		e.preventDefault();
 		this.setState(state => ({
 			list: state.list.concat(
-				<li key={skillID}>
-					{state.skill}
+				<li className="skill-item" key={skillID}>
+					<span> • {state.skill}</span>
 					<ItemDelete id={skillID} handleDelete={this.handleDelete}/>
 				</li>
 			),
@@ -50,9 +51,11 @@ export default class Skills extends Component {
 		return(
 			<form className="Skills">
 				<FormTitle id={'title-skills'} title={'Skills'}/>
-				<ul> {list} </ul>
-				<FormInput handleChange={handleChange} input={'Enter Skill'} value={skill}/>
-				<ItemAdd item={'Skill'} handleClick={handleClick}/>
+				<div className="skill-wrapper">
+					<FormInput handleChange={handleChange} input={'Enter Skill'} value={skill}/>
+					<ItemAdd item={'Skill'} handleClick={handleClick}/>
+				</div>
+				<ul className="skill-list"> {list} </ul>
 			</form>
 		);
 	};

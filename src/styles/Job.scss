@@ -1,0 +1,87 @@
+.Job {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+		'button button'
+		'input date'
+		'text text'
+	;
+	// border-top: solid 1px;
+	// border-bottom: solid 1px;
+	.button-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 4px;
+		grid-area: button;
+		.ItemDelete {
+			background-color: transparent;
+			border: none;
+			font-size: 14pt;
+			padding: 4px;
+			font-family: RobotoFlexBold;
+			cursor: pointer;
+		}
+	}
+	.job-input-wrapper {
+		display: flex;
+		flex-direction: column;
+		grid-area: input;
+		justify-self: left;
+		.FormInput {
+			width: 3in;
+			font-size: 14pt;
+			padding: 4px;
+			margin: 4px;
+			border: none;
+		}
+		#Position, #Company {
+			font-family: RobotoFlexBold;
+		}
+	}
+	.job-date-wrapper {
+		width: 2in;
+		grid-area: date;
+		align-items: center;
+		justify-self: flex-end;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+
+		label {
+			margin: 0 4px;
+			font-size: 12pt;
+			
+			font-family: RobotoFlex;
+
+		}
+		.start-wrapper, .end-wrapper {
+			display: flex;
+			align-items: center;
+			.FormInput {
+				margin: 0 4px;
+				border: none;
+				font-size: 14pt;
+				height: 2em;
+				text-align: right;
+				padding: 8px;
+				width: 100%;
+				font-family: RobotoFlexItalic;
+			}
+		}
+		
+	}
+	.FormTextArea {
+		grid-area: text;
+		height: 1.5in;
+		font-size: 14pt;
+		text-align: justify;
+		padding: 4px 8px;
+		border: none;
+		margin: 4px;
+		margin-left: 0px;
+		resize: none;
+	}
+}

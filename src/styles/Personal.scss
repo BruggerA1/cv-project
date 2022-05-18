@@ -1,18 +1,39 @@
-.Personal * {
-}
-
 .Personal {
+	height: 2in;
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	position: relative;
 
 	background-color: #404040;
-	border-bottom: solid 2px;
+
+	.FormSubmit {
+		position: absolute;
+		top: 0;
+		right: 12px;
+
+		span {
+			color: #EBEBEB;
+			font-size: 28pt;
+		}
+	}
+
+	.FormInput {
+		border: none;
+		background-color: transparent;
+		color: #EBEBEB;	
+	}
+
+	.name {
+		width: 100%;
+		display: flex;
+	}
 }
 
-#first, #last, #title {
+#first,
+#last,
+#title {
 	padding: 12px;
 	font-size: 24pt;
 	width: 50%;
@@ -23,7 +44,6 @@
 	padding-right: 4px;
 	font-family: RobotoFlex;
 	font-size: 36pt;
-
 }
 
 #last {
@@ -37,25 +57,4 @@
 	text-align: center;
 	font-size: 28pt;
 	font-family: RobotoFlexBold;
-}
-
-.Personal .FormSubmit {
-	position: absolute;
-	top: 0;
-	right: 12px;
-}
-.Personal .FormSubmit span {
-	color: #EBEBEB;
-	font-size: 28pt;
-}
-
-.Personal .name {
-	width: 100%;
-	display: flex;
-}
-
-.Personal .FormInput {
-	border: none;
-	background-color: transparent;
-	color: #EBEBEB;
 }

@@ -7,7 +7,7 @@ export default class FormTitle extends Component {
 	render() {
 		const { id, title } = this.props;
 		return(
-			<h1 id={id}>{title}</h1>
+			<h1 id={id} className={"FormTitle"}>{title}</h1>
 		);
 	};
 };

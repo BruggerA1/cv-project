@@ -7,7 +7,7 @@ export default class ItemAdd extends Component {
 	render() {
 		const { handleClick, item } = this.props;
 		return(
-			<button onClick={handleClick}> Add {item}</button>
+			<button className="ItemAdd" onClick={handleClick}> +{item}</button>
 		);
 	};
 };

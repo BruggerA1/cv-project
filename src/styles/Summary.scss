@@ -1,0 +1,23 @@
+.Summary {
+	height: 2.5in;
+	position: relative;
+	border: none;
+	width: 5.5in;
+	display: grid;
+	grid-template-columns: 1fr auto;
+
+	.FormSubmit {
+		align-self: flex-start;
+		border: none;
+
+	}
+	
+	.FormTextArea {
+		padding: 12px;
+		font-size: 16pt;
+		text-align:  justify;
+		text-indent: 0pt;
+		resize: none;
+		border: none;
+	}
+}

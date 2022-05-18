@@ -3,6 +3,7 @@ import FormInput from "./subcomponents/FormInput";
 import FormInputDate from "./subcomponents/FormInputDate";
 import FormSubmit from "./subcomponents/FormSubmit";
 import ItemDelete from "./subcomponents/ItemDelete";
+import '../styles/School.scss'
 
 export default class School extends Component {
 	constructor(props) {
@@ -28,11 +29,16 @@ export default class School extends Component {
 		const { id } = this.props;
 		return(
 			<form className="School" onSubmit={toggleEdit} id={id}>
-				<FormSubmit readOnly={readOnly}/>
-				<FormInput input="School" readOnly={readOnly}/>
-				<FormInput input="Major" readOnly={readOnly}/>
-				<FormInputDate readOnly={readOnly}/>
-				<ItemDelete id={id} handleDelete={handleDelete}/>
+				<div className="button-wrapper">
+					<FormSubmit readOnly={readOnly}/>
+					<ItemDelete id={id} handleDelete={handleDelete}/>
+				</div>
+				<FormInput className="school-school" input="School" readOnly={readOnly}/>
+				<div className="school-wrapper">
+					<FormInput className="school-major" input="Major" readOnly={readOnly}/>
+					<FormInput className="school-date"  input="Year"readOnly={readOnly}/>
+				</div>
+
 			</form>
 		);
 	};

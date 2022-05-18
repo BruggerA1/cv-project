@@ -1,0 +1,38 @@
+.Contact {
+	height: 2in;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	.FormTitle {
+		font-size: 16pt;
+		font-family: RobotoFlexItalic;
+	}
+
+	.contact-wrapper {
+		height: 40px;
+		width: 90%;
+		display: grid;
+		grid-template-columns: auto 1fr;
+
+		span {
+			align-self: center;
+			margin-right: 8px;
+		}
+
+		.FormInput {
+			padding: 0 4px;
+			text-align: left;
+			font-size: 14pt;
+			border: none;
+		}
+	}
+
+	.FormSubmit {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

@@ -1,5 +1,5 @@
 import { Component } from "react";
-import '../../styles/FormSubmit.css'
+import '../../styles/FormSubmit.scss'
 import uniqid from 'uniqid';
 
 export default class FormSubmit extends Component {

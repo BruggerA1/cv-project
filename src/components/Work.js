@@ -3,6 +3,7 @@ import uniqid from 'uniqid';
 import Job from "./Job";
 import ItemAdd from "./subcomponents/ItemAdd";
 import FormTitle from "./subcomponents/FormTitle";
+import '../styles/Work.scss';
 
 export default class Work extends Component {
 	constructor(props) {
@@ -34,9 +35,11 @@ export default class Work extends Component {
 		const { work } = this.state;
 		return(
 			<div className="Experience">
-				<FormTitle id={'title-experience'} title={'Experience'}/>
-				<div> {work} </div>
-				<ItemAdd item={'Job'} handleClick={handleClick}/>
+				<div className="work-wrapper">
+					<FormTitle id={'title-experience'} title={'Experience'}/>
+					<ItemAdd item={'Job'} handleClick={handleClick}/>
+				</div>
+				<div className="job-wrapper"> {work} </div>
 			</div>
 		);
 	};

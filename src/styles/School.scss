@@ -1,0 +1,47 @@
+.School {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	.FormSubmit {
+		span {
+			font-size: 14pt;
+		}
+	}
+	.school-wrapper {
+		display: grid;
+		grid-template-columns: 80% 20%;
+		.FormInput {
+			text-align: left;
+			padding: 4px;
+			font-size: 14pt;
+			border: none;
+
+		}
+		#Year {
+			text-align: center;
+		}
+	}
+	.FormInput {
+		text-align: left;
+		padding: 4px;
+		font-size: 14pt;
+		border: none;
+	}
+	.button-wrapper {
+		display: flex;
+		justify-content: space-between;
+		.FormSubmit {
+			font-size: 16pt;
+		}
+		.ItemDelete {
+			margin: 4px;
+			padding: 2px;
+			font-family: RobotoFlexBold;
+			border: none;
+			background-color: transparent;
+			font-size: 12pt;
+			cursor: pointer;
+		}
+	}
+}

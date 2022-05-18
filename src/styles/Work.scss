@@ -1,0 +1,27 @@
+.Experience {
+	height: 6.5in;
+	display: flex;
+	flex-direction: column;
+	.work-wrapper {
+		display: grid;
+		grid-template-columns: 9fr 1fr;
+		margin: 4px;
+		.FormTitle{
+			text-align: center;
+			font-family: RobotoFlexItalic;
+			font-size: 16pt ;
+		}
+		.ItemAdd {
+			font-size: 14pt;
+			font-family: RobotoFlexBold;
+			cursor: pointer;
+			padding: 4px;
+			border: none;
+			background-color: transparent;
+
+		}
+	}
+	.job-wrapper {
+		border: none;
+	}
+}

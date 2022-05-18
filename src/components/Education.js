@@ -3,6 +3,7 @@ import School from "./School";
 import uniqid from 'uniqid';
 import ItemAdd from "./subcomponents/ItemAdd";
 import FormTitle from "./subcomponents/FormTitle";
+import '../styles/Education.scss'
 
 export default class Education extends Component {
 	constructor(props) {
@@ -33,9 +34,11 @@ export default class Education extends Component {
 		const { education } = this.state;
 		return(
 			<div className="Education">
-				<FormTitle id={'title-education'} title={'Education'}/>
-				<div> {education} </div>
-				<ItemAdd item={'School'} handleClick={handleClick}/>
+				<div className="education-wrapper">
+					<FormTitle id={'title-education'} title={'Education'}/>
+					<ItemAdd item={'School'} handleClick={handleClick}/>
+				</div>
+				<div className="education-container"> {education} </div>
 			</div>
 		);
 	};

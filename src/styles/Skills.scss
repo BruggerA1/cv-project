@@ -1,0 +1,69 @@
+.Skills {
+	height: 5in;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: none;
+	margin: 4px;
+
+	h1 {
+		font-family: RobotoFlexItalic;
+		font-size: 16pt;
+	}
+
+	div {
+		display: flex;
+		align-self: stretch;
+		justify-content: space-evenly;
+		border: none;
+		height: 0.5in;
+		.FormInput {
+			font-size: 14pt;
+			padding: 12px;
+			margin:2%;
+			text-align: center;
+			align-self: stretch;
+			border: none;
+		}
+		.ItemAdd {
+			font-family: RobotoFlexBold;
+			font-size: 14pt;
+			margin: 2%;
+			align-self: stretch;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	.skill-list{
+		height: 100%;
+		border: none;
+		align-self: stretch;
+		display: flex;
+		flex-direction: column;
+
+		.skill-item{
+			display: flex;
+			border: none;
+			margin: 2px;
+			justify-content: space-around;
+			span {
+				padding: 4px;
+				width: 85%;
+				font-size: 14pt;
+				text-align: left;
+			}
+			.ItemDelete {
+				background-color: transparent;
+				font-family: RobotoFlexBold;
+				border: none;
+				cursor: pointer;
+				font-size: 12pt;
+				width: 15%;
+			}
+		}
+
+	}
+
+}
